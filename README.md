@@ -5,6 +5,8 @@ Project Report:  [Click Here](add link)
 
 This repository hosts a collection of code and data for performing Time Series Analysis on Bitcoin price data. The pre-trained Prophet model leverages historical price and market data to forecast future trends and fluctuations in the Bitcoin market. The code provides comprehensive tools for data preprocessing, feature engineering, model training, and evaluation. It serves as a valuable resource for researchers, enthusiasts, and developers interested in Bitcoin price prediction using time series analysis techniques.
 
+<p align="center"><img src="header.jpg" height="234px" width="435px"></p>
+
 ## Model Details 🔎
 
 The bitcoin price prediction model is built using Python and the Flask web framework. With the help of Facebook's Prophet Library, we have constructed a predictive model and this will help us to analyze historical price data and consider factors like trends, seasonality, and holidays to provide useful information for investors, traders, and researchers in the cryptocurrency marke. The model takes into account various features such as date, open price, low, high, close, adj close, and volume.
