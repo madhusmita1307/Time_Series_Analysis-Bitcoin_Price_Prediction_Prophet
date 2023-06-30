@@ -21,11 +21,15 @@ To use the bitcoin price prediction model, follow the steps below:
 ```
 git clone https://github.com/your-username/Time_Series_Analysis-Bitcoin_Price_Prediction_Prophet.git
 ```
-2. Install the required dependencies: :package::
+2. Open the folder in Pycharm and initiliaze the virtual environment with Python 3.10 as interpreter. It is mandatory to use virtual environment.
+3. Install the required dependencies: :package::
 ```
-pip install -r requirements.txt
+a. Go to Interpreter Settings and under python interpreter, search the packages and install the following modules.
+b. Modules to be installed:
+      Pandas (version 1.5.3), Pystan (version 2.19.1.1), Flask, Numpy, Matplotlib, Cython, cmdstanpy, and prophet.
+c. Update pip, setuptools, and wheel packages to latest version.
 ```
-4. Run the Flask web application: :computer::
+4. Run the Flask web application by running the `app.py` file ::computer::
 
 5. Open your web browser and visit `http://localhost:5000` to access the prediction interface.
 
