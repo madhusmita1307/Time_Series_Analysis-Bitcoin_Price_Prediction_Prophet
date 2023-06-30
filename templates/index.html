@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Home | Bitcoin Price Prediction</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <style>
+        .header {
+          background-color: #28a1dd;
+          color: white;
+          padding: 10px;
+          width:100%;
+          margin:0;
+          position:fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+        }
+
+        .header a {
+          background-color: #28a1dd;
+          border: none;
+          color: white;
+          padding: 8px 16px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+
+        .main{
+            font-size: x-large;
+            color: #28a1dd;
+            margin-top: 180px;
+            text-align: center;
+        }
+
+        .text{
+            font-size: small;
+            text-decoration: none;
+            font-style: normal;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+      </style>
+</head>
+<body>
+    <div class="header">
+        <a id="logo-container" href="/" class="brand-logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" height="80px" width="80px">
+        </a>
+        <a href="/">Home</a>
+        <a href="/Bitcoin">About</a>
+        <a href="/predict_page">Predict</a>
+    </div>
+
+    <div class="main">
+        <h1>Bitcoin Price Prediction using Prophet</h1> <br>
+        <img src="{{ url_for('static', filename='tsa.png') }}" height="400px" width="600px"> <br><br>
+    </div>
+
+    <div class="text center">
+        <h6>
+            Unleash the power of machine learning and time series analysis to forecast Bitcoin's future price trends. <br><br>
+            Our cutting-edge project leverages the Prophet library to build predictive models based on historical Bitcoin data. <br><br>
+            Stay ahead of the game by making informed investment decisions and maximizing your returns. <br><br>
+            Experience the future of crypto trading with our advanced forecasting technology. <br><br>
+            Get ready to ride the Bitcoin wave with confidence. <br><br>
+        </h6>
+    </div>
+    <br>
+    <div class="center">
+        <form action="predict" method="POST">
+            <button type="submit" class="btn-large waves-effect waves-light orange">Predict Prices Now</button>
+        </form>
+    </div>
+    <br><br><br>
+    <footer class="page-footer orange">
+        <div class="container" >
+            <div class="row">
+                <div class="col l6 s12" style="text-align: center; margin-left: 25%;">
+                    <h5 class="white-text">Team Details</h5>
+                    <p class="grey-text text-lighten-4">Madhusmita Mukherjee (20BCE2783 || madhusmita.mukherjee2020@vitstudent.ac.in)
+                        <br>Devanshi Jajodia (20BCE2749 || devanshi.jajodia2020@vitstudent.ac.in)
+                        <br>Pranav Vyas (20BCT0279 || pranav.vyas2020@vitstudent.ac.in)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </footer>
+</body>
+</html>

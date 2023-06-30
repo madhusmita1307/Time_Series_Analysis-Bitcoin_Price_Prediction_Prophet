@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Get Prediction</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+<nav class="light-blue lighten-1" role="navigation" style="height: 120px; padding: 11px;">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" height="100px" width="100px">
+        </a>
+
+        <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <h1 class="header center orange-text">Bitcoin Price Prediction</h1>
+        <div class="row center">
+            <h4 class="header col s12 light">Predict the Weighted Open Price of Bitcoin</h4>
+            <br>
+        </div>
+
+        <div class="align" style="width: 40%; margin-left: 30%;">
+            <form action='/predict' method="post" class="col s12">
+                <div class="input-field col s4">
+                    <label for="Date"><b>Select Date</b></label>
+                    <br>
+                    <input type="date" name="Date" class="validate">
+                </div>
+                <div class="input-field col s4">
+
+                    <div class=" center">
+                        <button type="submit" class="btn-large waves-effect waves-light orange">Predict Price</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <h4 style="text-align: center;">{{ prediction_text }}</h4>
+    <br>
+</div>
+
+<br><br>
+
+<footer class="page-footer orange">
+    <div class="container" >
+        <div class="row">
+            <div class="col l6 s12" style="text-align: center; margin-left: 25%;">
+                <h5 class="white-text">Team Details</h5>
+                <p class="grey-text text-lighten-4">Madhusmita Mukherjee (20BCE2783 || madhusmita.mukherjee2020@vitstudent.ac.in)
+                        <br>Devanshi Jajodia (20BCE2749 || devanshi.jajodia2020@vitstudent.ac.in)
+                        <br>Pranav Vyas (20BCT0279 || pranav.vyas2020@vitstudent.ac.in)
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+</footer>
+
+</body>
+</html>
